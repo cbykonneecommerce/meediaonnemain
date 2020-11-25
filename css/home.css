@@ -1,0 +1,51 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    color:#081f2d
+}
+
+#subtext{
+    margin-top: 2em;
+    margin-left: 1.2em;
+}
+
+.bartitle{
+    border-left: solid #00CBD3;
+    padding-left: 1em;
+}
+.bartitle span{
+    font-size: 45px;
+    line-height: 40px;
+}
+
+#wholescreen{
+    margin-top: -80px;
+}
+
+#wholescreenwave{
+    margin-top: -16%;
+    position: relative;
+}
+
+.navbar {
+    z-index: 99999;
+}
+
+.nav-link{
+    padding: .2rem 1rem !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link,.navbar-light .navbar-nav .nav-link{
+    font-weight: 500;
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #00B4BB !important;
+    border-bottom: solid 3px;
+}
+
+
+
+
