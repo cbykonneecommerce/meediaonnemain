@@ -1,8 +1,8 @@
 $('.herobanners').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
   autoplaySpeed: 3000,
   arrows: true,
   dots: true,
@@ -15,19 +15,52 @@ $('.herobanners').slick({
       }
     }]
 
-  });
+});
 
 
-  
+
 $(".slick-prev.slick-arrow").html(`
 <svg xmlns="http://www.w3.org/2000/svg" width="39.523" height="50.523" viewBox="0 0 39.523 50.523">
-  <path fill="none" stroke="rgb(0,0,0)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M27.76157527 11.76157527l-16 14 16 13"/>
+  <path fill="none" stroke="rgb(255,255,255)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M27.76157527 11.76157527l-16 14 16 13"/>
 </svg>
 
 `);
 $(".slick-next.slick-arrow").html(`
 <svg xmlns="http://www.w3.org/2000/svg" width="39.523" height="50.523" viewBox="0 0 39.523 50.523">
-  <path fill="none" stroke="rgb(0,0,0)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M11.7615601 38.76156629l16.00001574-13.99998203-15.9999854-13.00001797"/>
+  <path fill="none" stroke="rgb(255,255,255)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M11.7615601 38.76156629l16.00001574-13.99998203-15.9999854-13.00001797"/>
 </svg>
 
 `);
+
+
+
+$(".accordion-btn").click(function () {
+  $(this).parent().toggleClass('changed');
+})
+
+
+
+$(".pills li").click(function () {
+  let pill = $(this).attr("data-target");
+  console.log(pill)
+  $(".pills li").removeClass("selected")
+  $(this).addClass("selected")
+
+  switch (pill) {
+
+    case "#pill1":
+      $("#pill2").removeClass("show")
+      $("#pill3").removeClass("show")
+      break;
+
+    case "#pill2":
+      $("#pill1").removeClass("show")
+      $("#pill3").removeClass("show")
+      break;
+
+    case "#pill3":
+      $("#pill1").removeClass("show")
+      $("#pill2").removeClass("show")
+      break;
+  }
+})
