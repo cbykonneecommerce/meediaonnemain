@@ -560,4 +560,7 @@ margin-bottom: 0px;
         width: 65px !important;
         border-radius: 20px;
     }
+    footer .container {
+        padding-top: 21em;
+    }
 }
