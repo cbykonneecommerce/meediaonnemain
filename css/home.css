@@ -431,3 +431,133 @@ footer .infosfooter:last-of-type:before{
     display: inline-block;
     border-radius: 100%;
 }
+
+
+
+@media screen and (max-width: 600px) {
+    .slick-dots{
+        bottom: 16% !important;
+    }
+
+    #wholescreenwave {
+        margin-top: -22%;
+        position: relative;
+    }
+
+    header{
+        background-color: #001929;
+    }
+    .slick-next {
+        right: 18px !important;
+    }
+    .slick-prev {
+        left: 18px !important;
+    }
+
+    #subtext {
+        margin-top: 2em;
+        margin-left: 1.2em;
+        width: 100%;
+    }
+
+    .questionsList{
+        margin-top: 2em;
+    }
+    #questionsimage {
+        margin-top: 0em;
+    }
+    .accordion-btn{
+        font-size: 14px;
+    }
+    .btn-father:after{
+        content: url(../img/plus.svg);
+    color: #fff;
+    height: 42px;
+    background-color: #001929;
+    display: block;
+    width: 44px;
+    font-size: 23px;
+    padding-left: 6px;
+    padding-top: 4px;
+    margin-left: 79%;
+    margin-top: -36px;
+    position: absolute;
+    border-radius: 100%;
+    }
+
+
+    .btn-father.changed:after {
+        content: url(../img/minus.svg);
+        color: #fff;
+        height: 42px;
+        background-color: #001929;
+        display: block;
+        width: 44px;
+        font-size: 23px;
+        padding-left: 6px;
+        padding-top: 4px;
+        margin-left: 79%;
+        margin-top: -36px;
+        position: absolute;
+        border-radius: 100%;
+    }
+    #solucoes{
+        max-height: initial !important;
+    }
+
+
+    .mytxt h1 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .mytxt h3 {
+        font-weight: 300;
+        margin-bottom: 2em;
+        font-size: 16px;
+    }
+
+    .mytxt{
+        margin-top: -38%;
+    }
+    .slick-slide img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .thebigpill .thelist ul{
+        display: block;
+    }
+    .pills{
+margin-bottom: 0px;
+    }
+
+    #thecomputer{
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .pills li{
+        font-size: 11px;
+        padding: 4px 18px;
+    }
+
+    .thebigpill .thelist ul li img {
+        max-width: 100%;
+    }
+
+    .mx-auto.btn-center{
+        margin-top: 2em;
+    } 
+
+    .squares{
+        margin-left: 0px;
+    }
+
+    .squares li svg {
+        background-color: white;
+        padding: 11px;
+        height: 65px !important;
+        width: 65px !important;
+        border-radius: 20px;
+    }
+}
