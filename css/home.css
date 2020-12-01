@@ -178,6 +178,11 @@ p{
     border-radius: 15px;
 }
 
+.call-to-action:hover {
+    color:white !important;
+    text-decoration: none !important;
+}
+
 .call-to-action.fat{
     padding: 10px 47px;
     border-radius: 20px;
