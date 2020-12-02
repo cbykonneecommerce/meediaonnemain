@@ -1,15 +1,12 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /*SVGS COLOR*/
-.stsquare{fill:#BBBCBF;}
 
-
-
-
-
+.stsquare {
+    fill: #BBBCBF;
+}
 
 .slick-prev, .slick-next {
     z-index: 2;
@@ -20,7 +17,7 @@
     left: 62px !important;
 }
 
-.slick-next{
+.slick-next {
     right: 62px !important;
 }
 
@@ -28,70 +25,70 @@
     content: "" !important;
 }
 
-
-p{
-    color:#081f2d
+p {
+    color: #081f2d
 }
-.accordion-spacer{
+
+.accordion-spacer {
     margin: 16px 0px;
     padding-top: 1em;
 }
 
-.space-down{
+.space-down {
     margin-top: 23%;
 }
 
-.expo-results{
+.expo-results {
     margin-top: -13%;
 }
 
-.mytxt{
+.mytxt {
     margin-top: -33%;
     text-align: center;
     color: white;
 }
 
-.mytxt h1{
+.mytxt h1 {
     font-size: 53px;
     font-weight: bold;
 }
 
-.mytxt h3{
+.mytxt h3 {
     font-weight: 300;
     margin-bottom: 2em;
 }
 
-.card{
+.card {
     border: none !important;
     background-color: transparent !important;
     box-shadow: none !important;
 }
 
-.card-body{
+.card-body {
     padding-top: 0px !important;
     margin-top: -11px;
 }
+
 .card ul {
     margin: 0;
     padding: 0px;
 }
-.card ul li{
-    box-shadow: 0 4px 8px 0 rgba(227,227,227,1);
+
+.card ul li {
+    box-shadow: 0 4px 8px 0 rgba(227, 227, 227, 1);
     transition: 0.3s;
     list-style: none;
     padding: 10px 28px;
     border-radius: 22px;
     background-color: white;
-    
     margin: 9px 0px;
-
 }
 
-.card ul li p{
+.card ul li p {
     margin: 0px !important;
 }
 
-.card ul li::before{
+.card ul li::before {
     color: #00CBD3;
     content: " ";
     height: 17px;
@@ -104,17 +101,17 @@ p{
     border-radius: 100%;
 }
 
-.btn-father{
+.btn-father {
     background-color: #00CBD3;
     padding: 10px 20px;
     color: white;
     font-weight: 700;
     width: 90%;
     font-size: 23px;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
-.accordion-btn{
+.accordion-btn {
     background-color: #00CBD3;
     padding: 0px 20px;
     color: white !important;
@@ -126,7 +123,7 @@ p{
     width: 100%;
 }
 
-.btn-father:after{
+.btn-father:after {
     content: url(../img/plus.svg);
     color: #fff;
     height: 42px;
@@ -140,11 +137,9 @@ p{
     margin-top: -36px;
     position: absolute;
     border-radius: 100%;
-
 }
 
-
-.btn-father.changed:after{
+.btn-father.changed:after {
     content: url(../img/minus.svg);
     color: #fff;
     height: 42px;
@@ -158,20 +153,19 @@ p{
     margin-top: -36px;
     position: absolute;
     border-radius: 100%;
-
 }
 
 .collapse {
     margin-top: 1em;
 }
 
-#subtext{
+#subtext {
     margin-top: 2em;
     margin-left: 1.2em;
     width: 46%;
 }
 
-.call-to-action{
+.call-to-action {
     background-color: #00CBD3;
     color: white;
     padding: 6px 17px;
@@ -179,11 +173,11 @@ p{
 }
 
 .call-to-action:hover {
-    color:white !important;
+    color: white !important;
     text-decoration: none !important;
 }
 
-.call-to-action.fat{
+.call-to-action.fat {
     padding: 10px 47px;
     border-radius: 20px;
 }
@@ -191,20 +185,22 @@ p{
 /*.questionsList ul li::marker{
     color: #00CBD3;
 }*/
-.questionsList ul li{
+
+.questionsList ul li {
     list-style: none;
     background-color: white;
     margin-bottom: 0.6em;
     padding: 6px;
-    color:#081f2d;
+    color: #081f2d;
     border-radius: 46px;
     box-shadow: 10px 5px 1px #E7E7E7;
 }
 
-#questionsimage{
+#questionsimage {
     margin-top: -7em;
 }
-.questionsList ul li::before{
+
+.questionsList ul li::before {
     color: #00CBD3;
     content: " ";
     height: 13px;
@@ -216,20 +212,21 @@ p{
     margin-right: 3%;
 }
 
-.bartitle{
+.bartitle {
     border-left: solid #00CBD3;
     padding-left: 1em;
 }
-.bartitle span{
+
+.bartitle span {
     font-size: 45px;
     line-height: 40px;
 }
 
-#wholescreen{
+#wholescreen {
     margin-top: -80px;
 }
 
-#wholescreenwave{
+#wholescreenwave {
     margin-top: -16%;
     position: relative;
 }
@@ -238,21 +235,21 @@ p{
     z-index: 99999;
 }
 
-.nav-link{
+.nav-link {
     padding: .2rem 1rem !important;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link,.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link {
     font-weight: 500;
     color: white !important;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link{
+.navbar-dark .navbar-nav .active>.nav-link {
     color: #00B4BB !important;
     border-bottom: solid 3px;
 }
 
-.thebigpill{
+.thebigpill {
     background-color: #001929;
     border-radius: 136px;
     box-shadow: 17px 13px 0px #00CBD3;
@@ -266,18 +263,18 @@ p{
     list-style: none;
 }
 
-#thecomputer{
+#thecomputer {
     max-width: 82%;
     margin-bottom: -3em;
     z-index: 999999;
     position: relative;
 }
 
-.pills{
+.pills {
     margin-bottom: -1em;
 }
 
-.pills li{
+.pills li {
     display: inline-block;
     list-style: none;
     margin: 8px 0px;
@@ -287,23 +284,22 @@ p{
     background-color: #fff;
 }
 
-.pills li.selected{
- color:white;
- font-weight: bold;
- background-color:#00CBD3;
+.pills li.selected {
+    color: white;
+    font-weight: bold;
+    background-color: #00CBD3;
 }
 
-#belowtabs{
+#belowtabs {
     margin-top: 14%;
 }
 
-.btn-center{
+.btn-center {
     display: block;
     width: 300px;
 }
 
-
-#theblocks{
+#theblocks {
     margin-top: 26%;
 }
 
@@ -311,15 +307,14 @@ p{
     margin-top: -1em;
     margin-left: 3em;
 }
-.squares li{
+
+.squares li {
     display: inline-block;
     list-style: none;
     text-align: center;
-  
 }
 
-
-.squares li svg{
+.squares li svg {
     background-color: white;
     padding: 11px;
     height: 70px !important;
@@ -327,35 +322,32 @@ p{
     border-radius: 20px;
 }
 
-.squaretxt{
+.squaretxt {
     color: white !important;
     margin: 0px !important;
-} 
+}
 
-.squares li.selected svg{
+.squares li.selected svg {
     background-color: #00CBD3;
 }
 
-.squares li.selected svg .stsquare{
+.squares li.selected svg .stsquare {
     fill: #001929 !important
 }
-
-
 
 .screenbanners .slick-prev {
     left: -65px !important;
     width: 50px;
     background-color: #00CBD3 !important;
     border-radius: 100px;
-} 
+}
 
 .screenbanners .slick-next {
     right: -65px !important;
     width: 50px;
     background-color: #00CBD3 !important;
     border-radius: 100px;
-} 
-
+}
 
 #whitesnake {
     margin-top: -25%;
@@ -372,14 +364,13 @@ input.form-control {
 
 .form-control {
     border-radius: 26px !important;
-   
 }
 
 .form-group {
     margin-bottom: 9px !important;
 }
 
-footer{
+footer {
     background-image: url(../img/meediaonne-onepage-bgfooter.png);
     max-width: 100%;
     height: 800px;
@@ -389,41 +380,42 @@ footer{
     background-size: cover;
 }
 
-footer .container{
+footer .container {
     padding-top: 29em;
 }
 
 #lastmenu li {
-display: inline-block;
-margin: 1px 6px;
+    display: inline-block;
+    margin: 1px 6px;
 }
 
-#lastmenu{
+#lastmenu {
     padding: 0px 10px;
 }
+
 #lastmenu li a {
     color: #001929 !important
 }
 
-.footer-title{
+.footer-title {
     color: #00CBD3;
     font-weight: bold;
     margin-top: 1em;
 }
 
-footer span{
+footer span {
     color: #001929;
 }
 
-footer .infosfooter{
+footer .infosfooter {
     color: #001929;
     margin-right: 14px;
 }
 
-footer .infosfooter:last-of-type:before{
+footer .infosfooter:last-of-type:before {
     content: "";
     height: 11px;
-    background-color:#00CBD3;
+    background-color: #00CBD3;
     display: block;
     width: 11px;
     font-size: 23px;
@@ -432,19 +424,15 @@ footer .infosfooter:last-of-type:before{
     border-radius: 100%;
 }
 
-
-
 @media screen and (max-width: 600px) {
-    .slick-dots{
+    .slick-dots {
         bottom: 16% !important;
     }
-
     #wholescreenwave {
         margin-top: -22%;
         position: relative;
     }
-
-    header{
+    header {
         background-color: #001929;
     }
     .slick-next {
@@ -453,45 +441,39 @@ footer .infosfooter:last-of-type:before{
     .slick-prev {
         left: 18px !important;
     }
-
     #subtext {
         margin-top: 2em;
         margin-left: 1.2em;
         width: 96%;
     }
-
-    .questionsList{
+    .questionsList {
         margin-top: 2em;
     }
     #questionsimage {
         margin-top: 0em;
     }
-    .accordion-btn{
+    .accordion-btn {
         font-size: 14px;
         padding: 0px 8px;
     }
-
     .btn-father {
-     
         width: 84%;
     }
-    .btn-father:after{
+    .btn-father:after {
         content: url(../img/plus.svg);
-    color: #fff;
-    height: 42px;
-    background-color: #001929;
-    display: block;
-    width: 44px;
-    font-size: 23px;
-    padding-left: 6px;
-    padding-top: 4px;
-    margin-left: 75%;
-    margin-top: -36px;
-    position: absolute;
-    border-radius: 100%;
+        color: #fff;
+        height: 42px;
+        background-color: #001929;
+        display: block;
+        width: 44px;
+        font-size: 23px;
+        padding-left: 6px;
+        padding-top: 4px;
+        margin-left: 75%;
+        margin-top: -36px;
+        position: absolute;
+        border-radius: 100%;
     }
-
-
     .btn-father.changed:after {
         content: url(../img/minus.svg);
         color: #fff;
@@ -507,11 +489,9 @@ footer .infosfooter:last-of-type:before{
         position: absolute;
         border-radius: 100%;
     }
-    #solucoes{
+    #solucoes {
         max-height: initial !important;
     }
-
-
     .mytxt h1 {
         font-size: 22px;
         font-weight: bold;
@@ -521,44 +501,36 @@ footer .infosfooter:last-of-type:before{
         margin-bottom: 2em;
         font-size: 16px;
     }
-
-    .mytxt{
+    .mytxt {
         margin-top: -38%;
     }
     .slick-slide img {
         max-width: 100%;
         height: auto;
     }
-
-    .thebigpill .thelist ul{
+    .thebigpill .thelist ul {
         display: block;
     }
-    .pills{
-margin-bottom: 0px;
+    .pills {
+        margin-bottom: 0px;
     }
-
-    #thecomputer{
+    #thecomputer {
         margin-bottom: 0px;
         margin-top: 20px;
     }
-
-    .pills li{
+    .pills li {
         font-size: 11px;
         padding: 4px 18px;
     }
-
     .thebigpill .thelist ul li img {
         max-width: 100%;
     }
-
-    .mx-auto.btn-center{
+    .mx-auto.btn-center {
         margin-top: 2em;
-    } 
-
-    .squares{
+    }
+    .squares {
         margin-left: -16px;
     }
-
     .squares li svg {
         background-color: white;
         padding: 11px;
@@ -569,10 +541,9 @@ margin-bottom: 0px;
     footer .container {
         padding-top: 21em;
     }
-    #form-sender{
+    #form-sender {
         margin-top: 2em;
     }
-
     #lastmenu li {
         display: inline-block;
         margin: 1px 2px;
@@ -588,8 +559,7 @@ margin-bottom: 0px;
         box-shadow: 7px 8px 0px #00CBD3;
         padding: 3em;
     }
-
-    .roi{
+    .roi {
         margin-top: 1em;
     }
 }

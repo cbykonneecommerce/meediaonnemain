@@ -41,9 +41,9 @@ $("#investmedia").on("keyup", function (e) {
 
   var elemento = document.getElementById('investmedia');
   var valor = elemento.value;
-  
+
   valor = valor + '';
-  valor = parseInt(valor.replace(/[\D]+/g,''));
+  valor = parseInt(valor.replace(/[\D]+/g, ''));
   valor = valor + '';
   valor = valor.replace(/([0-9]{2})$/g, ",$1");
 
@@ -64,15 +64,15 @@ $("#telefone").on("keyup", function (e) {
   tel = tel.replace(/^(\d)/, "($1")
   tel = tel.replace(/(.{3})(\d)/, "$1)$2")
   if (tel.length == 9) {
-      tel = tel.replace(/(.{1})$/, "-$1")
+    tel = tel.replace(/(.{1})$/, "-$1")
   } else if (tel.length == 10) {
-      tel = tel.replace(/(.{2})$/, "-$1")
+    tel = tel.replace(/(.{2})$/, "-$1")
   } else if (tel.length == 11) {
-      tel = tel.replace(/(.{3})$/, "-$1")
+    tel = tel.replace(/(.{3})$/, "-$1")
   } else if (tel.length == 12) {
-      tel = tel.replace(/(.{4})$/, "-$1")
+    tel = tel.replace(/(.{4})$/, "-$1")
   } else if (tel.length > 12) {
-      tel = tel.replace(/(.{4})$/, "-$1")
+    tel = tel.replace(/(.{4})$/, "-$1")
   }
   $(this).val(tel);
 });
@@ -80,38 +80,38 @@ $("#telefone").on("keyup", function (e) {
 
 
 
-$("#form-sender").click(()=>{
+$("#form-sender").click(() => {
   event.preventDefault()
   console.log("start")
   let formdata = {
-      "apiKey": "1234",
-      "company_name": $("#empresa").val(),
-      "site": $("#site").val(),
-      "name":$("#name").val(),
-      "email":$("#email").val(),
-      "phone_number":$("#telefone").val(),
-      "page_views":$("#pgview").val(),
-      "media_investment":$("#investmedia").val()
+    "apiKey": "1234",
+    "company_name": $("#empresa").val(),
+    "site": $("#site").val(),
+    "name": $("#name").val(),
+    "email": $("#email").val(),
+    "phone_number": $("#telefone").val(),
+    "page_views": $("#pgview").val(),
+    "media_investment": $("#investmedia").val()
   }
 
-fetch('https://meediaonne.com/api/landing-page/store', {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(formdata)
-})
-.then(response =>{
-    return response.json()
-})
-.then(result=>{
-    console.log(result);
-    alert("Dados enviados com sucesso!")
-})
-.catch(function(error) {
-  console.log("Algo deu errado. Tente novamente.");
-});
+  fetch('https://meediaonne.com/api/landing-page/store', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formdata)
+  })
+    .then(response => {
+      return response.json()
+    })
+    .then(result => {
+      console.log(result);
+      alert("Dados enviados com sucesso!")
+    })
+    .catch(function (error) {
+      console.log("Algo deu errado. Tente novamente.");
+    });
 })
 
 
