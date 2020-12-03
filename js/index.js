@@ -132,8 +132,8 @@ $(".slick-next.slick-arrow").html(`
 
 
 
-$(".accordion-btn").click(function () {
-  $(this).parent().toggleClass('changed');
+$(".btn-father").click(function () {
+  $(this).toggleClass('changed');
 })
 
 
