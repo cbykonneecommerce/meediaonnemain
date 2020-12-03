@@ -284,6 +284,12 @@ p {
     background-color: #fff;
 }
 
+.pills li:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #00CBD3;
+}
+
 .pills li.selected {
     color: white;
     font-weight: bold;
@@ -332,6 +338,14 @@ p {
 }
 
 .squares li.selected svg .stsquare {
+    fill: #001929 !important
+}
+
+.squares li:hover svg {
+    background-color: #00CBD3;
+}
+
+.squares li:hover svg .stsquare {
     fill: #001929 !important
 }
 
