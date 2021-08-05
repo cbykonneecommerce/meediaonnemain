@@ -104,6 +104,7 @@
 
                 <div align="center">
                     <input id="btn_action_mobile" type="button" class="buttons_lp" align="center"
+                           data-id="botao_teste_gratuitamente_mobile"
                            value="TESTE GRATUITAMENTE">
                 </div>
 
@@ -154,7 +155,7 @@
                         <input id="btn-submit" type="button" class="form-control" value="EXPERIMENTE GRÁTIS">
                     </div>
 
-                    <input type="hidden" id="click_origin" name="click_origin" value="btn_submit">
+                    <input type="hidden" id="click_origin" name="click_origin" value="botao_experimente_gratis">
                 </form>
             </div>
         </div>
@@ -202,7 +203,8 @@
 
     </div>
     <div class="row justify-content-center card-background pt-5 pb-4">
-        <input type="button" class="buttons_lp" value="COMECE AGORA" align="center" id="btn_card_1">
+        <input type="button" class="buttons_lp" value="COMECE AGORA" align="center" id="btn_card_1"
+               data-id="botao_comece_agora">
     </div>
     <div class="row justify-content-center card-background2">
         <div class="col-lg-3 mt-5">
@@ -236,7 +238,8 @@
         </div>
     </div>
     <div class="row justify-content-center card-background2 pt-5 pb-4">
-        <input type="button" class="buttons_lp" value="TESTE GRATUITAMENTE" align="center" id="btn_card_2">
+        <input type="button" class="buttons_lp" value="TESTE GRATUITAMENTE" align="center" id="btn_card_2"
+               data-id="botao_teste_gratuitamente">
     </div>
 
     <div class="row">
@@ -270,6 +273,11 @@
 
         </div>
     </div>
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+       class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+
 </div>
 
 <style>
@@ -296,6 +304,25 @@
         font-family: 'fonte-light';
         src: url('assets/fonts/Lato-Light.ttf');
         font-display: swap;
+    }
+
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
     }
 
     #logo {
@@ -607,7 +634,7 @@
 <script>
 
     $(".buttons_lp").click(function () {
-        $("#click_origin").val($(this).attr("id"));
+        $("#click_origin").val($(this).attr("data-id"));
         $('#top-banner-form-inner')[0].scrollIntoView(true);
     });
 
