@@ -74,8 +74,8 @@
 <div class="container-fluid top-banner ">
 
     <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-10">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11">
             <a href="#"><img id="logo" src="assets/img/logo-MeediaOnne.png" class="mt-5"></a>
         </div>
     </div>
@@ -95,11 +95,14 @@
                     <p class="top-banner-title-inner-title-text-black first_color"><strong>E</strong> TECNOLOGIA</p>
 
                 </div>
-                <div class="top-banner-sub-title">
-                    <p>Especializada em gestão e
-                    </p>
-                    <p>otimização de
-                        campanhas digitais</p>
+
+                <div class="subtitle-container">
+                    <div class="top-banner-sub-title">
+                        <p>Especializada em gestão e
+                        </p>
+                        <p>otimização de
+                            campanhas digitais</p>
+                    </div>
                 </div>
 
                 <div align="center">
@@ -273,7 +276,7 @@
 
         </div>
     </div>
-    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+    <a href="https://api.whatsapp.com/send?phone=5515991091151&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20MeediaOnne%21"
        class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
@@ -553,6 +556,17 @@
         color: #f2f2f2;
     }
 
+    /*safari*/
+    @media not all and (min-resolution: .001dpcm) {
+        @media {
+
+            .top-banner-title-inner-title-text-medium {
+                font-size: 44px !important;
+            }
+        }
+    }
+
+    /*hack window*/
     @media only screen and (min-width: 990px) and (max-width: 1090px) {
         .top-banner-title {
             margin-right: 3rem !important;
@@ -560,6 +574,7 @@
 
     }
 
+    /*tablet*/
     @media only screen and (max-width: 800px) {
         #btn_action_mobile {
             display: inline;
@@ -567,7 +582,17 @@
         }
     }
 
+    /*mobile*/
     @media only screen and (max-width: 600px) {
+
+        #logo {
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        #logo_footer {
+            height: 24px;
+        }
 
         .row-top-banner {
             margin-top: 80px !important;
@@ -583,8 +608,16 @@
             margin-bottom: 0px !important;
         }
 
+        .subtitle-container {
+            width: 300px;
+            height: auto;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+        }
+
         .top-banner-sub-title {
-            padding-left: 30px !important;
+            /*padding-left: 30px !important;*/
             text-align: left !important;
         }
 
