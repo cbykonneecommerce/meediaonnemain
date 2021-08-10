@@ -355,3 +355,64 @@ i:before {
         font-size: 20px !important;
     }
 }
+
+/*LGPD MODAL*/
+#privacy-pop-up {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    background-color: #8545FF;
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.5);
+    border-radius: 5px;
+    max-width: 275px;
+}
+
+.cookie-banner-lgpd_text {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+}
+.cookie-banner-lgpd_text p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.cookie-banner-lgpd_text a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+#exit-popup {
+    text-align: center;
+    color: #8545FF;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    line-height: normal;
+    width: calc(100% - 20px);
+    transition: .4s;
+}
+#exit-popup:hover {
+    color: #fff;
+    background-color: #7718E6;
+    transition: .4s;
+}
+
+@media (max-width: 768px) {
+    #privacy-pop-up {
+        bottom: 100px;
+    }
+}
+/*FIM LGPD MODAL*/
