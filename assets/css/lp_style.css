@@ -271,12 +271,10 @@ i:before {
 
 /*safari*/
 @media not all and (min-resolution: .001dpcm) {
-    @media {
 
         .top-banner-title-inner-title-text-medium {
             font-size: 44px !important;
         }
-    }
 }
 
 /*hack window*/
