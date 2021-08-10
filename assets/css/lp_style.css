@@ -272,9 +272,9 @@ i:before {
 /*safari*/
 @media not all and (min-resolution: .001dpcm) {
 
-        .top-banner-title-inner-title-text-medium {
-            font-size: 44px !important;
-        }
+    .top-banner-title-inner-title-text-medium {
+        font-size: 44px !important;
+    }
 }
 
 /*hack window*/
@@ -368,7 +368,7 @@ i:before {
     padding: 25px;
     text-align: center;
     flex-wrap: wrap;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.5);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .5);
     border: 1px solid #F2F2F2;
     border-radius: 5px;
     max-width: 280px;
@@ -381,6 +381,7 @@ i:before {
     align-items: center;
     line-height: 5px;
 }
+
 .cookie-banner-lgpd_text p {
     color: #0c4464;
     font-size: 14px;
@@ -402,13 +403,14 @@ i:before {
     background-color: #10537a;
     border-radius: 4px;
     cursor: pointer;
-    font-weight:600;
+    font-weight: 600;
     font-size: 16px;
     padding: 5px;
     line-height: normal;
     width: calc(100% - 20px);
     transition: .4s;
 }
+
 #exit-popup:hover {
     color: #fff;
     background-color: #133c53;
@@ -420,4 +422,14 @@ i:before {
         bottom: 100px;
     }
 }
+
+.politica-privacidade h1 {
+
+}
+
+.politica-privacidade h2 {
+
+}
 /*FIM LGPD MODAL*/
+
+
