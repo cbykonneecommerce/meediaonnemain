@@ -3,6 +3,6 @@
 Icon
 
 # Node.js / Grunt
-node_modules
+#node_modules
 .sass-cache
 npm-debug.log
