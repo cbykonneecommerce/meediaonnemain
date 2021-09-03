@@ -83,7 +83,6 @@ class Gamajo_Dashboard_Glancer {
 	 * @return array Filtered "At a Glance" items.
 	 */
 	public function show( $items ) {
-		if(is_array($items)) {
 		foreach ( $this->items as $item ) {
 			$item_markup = $this->get_single_item( $item );
 			if ( $item_markup ) {
@@ -94,7 +93,6 @@ class Gamajo_Dashboard_Glancer {
 		unset( $this->items );
 
 		return $items;
-		}
 	}
 
 	/**
