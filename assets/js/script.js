@@ -1,12 +1,12 @@
 var $ = jQuery.noConflict();
-$(document).ready(function() {
+$(document).ready(function () {
     const showLgpd = localStorage.getItem('showLgpd');
     if (showLgpd != 'false') {
         $("#privacy-pop-up").css({
             "display": "flex"
         });
     }
-    $('#exit-popup').click(function() {
+    $('#exit-popup').click(function () {
         $("#privacy-pop-up").css({
             "display": "none"
         });
@@ -53,6 +53,9 @@ $("#btn-submit").click(function () {
                 }
                 $("#btn-submit").prop("disabled", false);
                 clearFileds();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                $("#click_origin").before('<div style="background-color:#F52929;color:white;text-align:center;font-family:\'fonte-regular\';">OCORREU UM ERRO TENTE NOVAMENTE</div>');
             }
         });
     }
