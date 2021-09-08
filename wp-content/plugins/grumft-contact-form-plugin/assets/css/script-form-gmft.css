@@ -1,9 +1,9 @@
-@media (min-width:641px)  { 
+@media (max-width:799px)  { 
     #email_subscriber{
-        width:100% !important;
+        width:90% !important;
     }
     #btn-submit-subscriber{
-        width:100% !important;
+        width:90% !important;
     }
 }
 @media (min-width:800px) { 
