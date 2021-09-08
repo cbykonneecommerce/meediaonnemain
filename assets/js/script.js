@@ -1,12 +1,12 @@
 var $ = jQuery.noConflict();
-$(document).ready(function() {
+$(document).ready(function () {
     const showLgpd = localStorage.getItem('showLgpd');
     if (showLgpd != 'false') {
         $("#privacy-pop-up").css({
             "display": "flex"
         });
     }
-    $('#exit-popup').click(function() {
+    $('#exit-popup').click(function () {
         $("#privacy-pop-up").css({
             "display": "none"
         });
@@ -46,11 +46,11 @@ $("#btn-submit").click(function () {
             data: formData,
             success: function (data) {
                 var status = JSON.parse(data).status
-                if (status == 201) {
-                    $("#click_origin").before('<div style="background-color: green;color: white;text-align: center;font-family: \'fonte-regular\';font-size: 13px;padding: 8px;border-radius: 9px;">ENTRAREMOS EM CONTATO O MAIS BREVE POSSÍVEL :)</div>');
-                } else {
+                /*if (status == 201) {*/
+                $("#click_origin").before('<div style="background-color: green;color: white;text-align: center;font-family: \'fonte-regular\';font-size: 13px;padding: 8px;border-radius: 9px;">ENTRAREMOS EM CONTATO O MAIS BREVE POSSÍVEL :)</div>');
+                /*} else {
                     $("#click_origin").before('<div style="background-color:#F52929;color:white;text-align:center;font-family:\'fonte-regular\';">OCORREU UM ERRO TENTE NOVAMENTE</div>');
-                }
+                }*/
                 $("#btn-submit").prop("disabled", false);
                 clearFileds();
             }
