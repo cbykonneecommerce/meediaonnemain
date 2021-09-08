@@ -25,10 +25,10 @@ jQuery("#btn-submit").click(function () {
     var email = jQuery("#email").val();
     var phone = jQuery("#phone").val();
     var company = jQuery("#company").val();
-    var investing = jQuery("#investing").val();
+    var investment = jQuery("#investment").val();
     var click_origin = jQuery("#click_origin").val();
 
-    var isValid = validateFields(name, email, phone, company, investing);
+    var isValid = validateFields(name, email, phone, company, investment);
     if (isValid == 4) {
 
         jQuery("#btn-submit").prop("disabled", true);
@@ -38,7 +38,7 @@ jQuery("#btn-submit").click(function () {
             'email': email,
             'phone': phone,
             'company': company,
-            'investing': investing,
+            'investment': investment,
             'click_origin': click_origin
         };
 
@@ -63,7 +63,7 @@ jQuery("#btn-submit").click(function () {
     }
 });
 
-function validateFields(name, email, phone, company, investing) {
+function validateFields(name, email, phone, company, investment) {
     var valid = 4;
 
     if (name == "") {
@@ -94,11 +94,11 @@ function validateFields(name, email, phone, company, investing) {
         jQuery("#company").css('border', 'none');
     }
 
-    if (investing == "" || investing.includes("Média")) {
-        jQuery("#investing").css('border', 'solid red 3px');
+    if (investment == "" || investment.includes("Média")) {
+        jQuery("#investment").css('border', 'solid red 3px');
         valid--;
     } else {
-        jQuery("#investing").css('border', 'none');
+        jQuery("#investment").css('border', 'none');
     }
 
     return valid;
@@ -109,4 +109,5 @@ function clearFileds() {
     jQuery("#email").val("");
     jQuery("#phone").val("");
     jQuery("#company").val("");
+    jQuery("#investment").val("");
 }
