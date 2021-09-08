@@ -5,6 +5,10 @@
     #btn-submit-subscriber{
         width:90% !important;
     }
+
+    .header2 .header-content .header-txt h4 {        
+        padding-bottom: 15px !important;
+    }
 }
 @media (min-width:800px) { 
     #email_subscriber{
