@@ -14,7 +14,7 @@ function send_register_form()
 	$email = $_POST["email"];
 	$phone = $_POST["phone"];
 	$company = $_POST["company"];
-	$investment = "";
+	$investment = $_POST["investment"];
 	$click_origin = $_POST["click_origin"];
 	$apiKey = "1234";
 
