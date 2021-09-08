@@ -116,8 +116,7 @@ jQuery("#btn-submit-subscriber").click(function () {
     var isValid = false;
     if (email == "") {
         isValid = false;
-        jQuery("#email_subscriber").css('border', 'solid red 3px');
-        valid--;
+        jQuery("#email_subscriber").css('border', 'solid red 3px');        
     } else {
         isValid = true;
         jQuery("#email_subscriber").css('border', 'none');
