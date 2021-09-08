@@ -53,6 +53,9 @@ $("#btn-submit").click(function () {
                 }
                 $("#btn-submit").prop("disabled", false);
                 clearFileds();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                $("#click_origin").before('<div style="background-color:#F52929;color:white;text-align:center;font-family:\'fonte-regular\';">OCORREU UM ERRO TENTE NOVAMENTE</div>');
             }
         });
     }
