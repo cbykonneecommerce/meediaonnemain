@@ -1,0 +1,13 @@
+@media (min-width:641px)  { 
+    #email_subscriber{
+        width:90% !important;
+    }
+}
+@media (min-width:800px) { 
+    #email_subscriber{
+        width:550px !important;
+    }
+}
+#email_subscriber{
+    width:550px !important;
+}
