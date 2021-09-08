@@ -1,19 +1,19 @@
-var $ = jQuery.noConflict();
-jQuery(document).ready(function () {
-    const showLgpd = localStorage.getItem('showLgpd');
-    if (showLgpd != 'false') {
-        jQuery("#privacy-pop-up").css({
-            "display": "flex"
-        });
-    }
-    $('#exit-popup').click(function () {
-        jQuery("#privacy-pop-up").css({
-            "display": "none"
-        });
-        localStorage.setItem('showLgpd', 'false');
-    });
-});
+/*var $ = jQuery.noConflict();*/
 
+// jQuery(document).ready(function () {
+//     const showLgpd = localStorage.getItem('showLgpd');
+//     if (showLgpd != 'false') {
+//         jQuery("#privacy-pop-up").css({
+//             "display": "flex"
+//         });
+//     }
+//     $('#exit-popup').click(function () {
+//         jQuery("#privacy-pop-up").css({
+//             "display": "none"
+//         });
+//         localStorage.setItem('showLgpd', 'false');
+//     });
+// });
 
 // $(".buttons_lp").click(function () {
 //     $("#click_origin").val($(this).attr("data-id"));
