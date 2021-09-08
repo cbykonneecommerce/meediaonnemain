@@ -14,10 +14,11 @@ function send_register_form()
 	$email = $_POST["email"];
 	$phone = $_POST["phone"];
 	$company = $_POST["company"];
+	$investing = $_POST["investing"];
 	$click_origin = $_POST["click_origin"];
 	$apiKey = "1234";
 
-	$json_obj = json_encode(array("name" => $name, "email" => $email, "phone" => $phone, "company" => $company, 'click_origin' => $click_origin, 'investment' => '', 'apiKey' => $apiKey));
+	$json_obj = json_encode(array("name" => $name, "email" => $email, "phone" => $phone, "company" => $company, 'click_origin' => $click_origin, 'investment' => $investing, 'apiKey' => $apiKey));
 
 
 	$ch = curl_init();
