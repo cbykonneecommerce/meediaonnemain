@@ -57,6 +57,8 @@ jQuery("#btn-submit").click(function () {
                 clearFileds();
             },
             error: function (xhr, ajaxOptions, thrownError) {
+                jQuery("#btn-submit").prop("disabled", false);
+                clearFileds();
                 jQuery("#click_origin").before('<div style="background-color:#F52929;color:white;text-align:center;font-family:\'fonte-regular\';">OCORREU UM ERRO TENTE NOVAMENTE</div>');
             }
         });
@@ -105,7 +107,11 @@ function validateFields(name, email, phone, company, investment) {
 }
 
 function clearFileds() {
-    jQuery("#email_subscriber").val("");
+    jQuery("#name").val("");
+    jQuery("#email").val("");
+    jQuery("#phone").val("");
+    jQuery("#company").val("");
+    jQuery("#investment").val("");
 }
 
 jQuery("#btn-submit-subscriber").click(function () {
@@ -143,10 +149,12 @@ jQuery("#btn-submit-subscriber").click(function () {
                     jQuery("#click_origin_subscriber").before('<div style="background-color:#F52929;color:white;text-align:center;font-family:\'fonte-regular\';">OCORREU UM ERRO TENTE NOVAMENTE</div>');
                 }
                 jQuery("#btn-submit-subscriber").prop("disabled", false);
-                clearFileds();
+                jQuery("#email_subscriber").val("");
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 jQuery("#click_origin_subscriber").before('<div style="background-color:#F52929;color:white;text-align:center;font-family:\'fonte-regular\';">OCORREU UM ERRO TENTE NOVAMENTE</div>');
+                jQuery("#email_subscriber").val("");
+                jQuery("#btn-submit-subscriber").prop("disabled", false);
             }
         });
     }

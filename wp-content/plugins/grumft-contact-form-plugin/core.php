@@ -39,8 +39,7 @@ function send_register_form()
 function send_register_email_subscriber()
 {
 	
-	$email = $_POST["email"];
-	
+	$email = $_POST["email"];	
 	$click_origin = $_POST["click_origin"];
 	$apiKey = "1234";
 
