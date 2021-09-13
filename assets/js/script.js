@@ -1,6 +1,7 @@
 var $ = jQuery.noConflict();
 $(document).ready(function () {
     const showLgpd = localStorage.getItem('showLgpd');
+    showLgpd = 'false'; // removido a pedido do Luiz
     if (showLgpd != 'false') {
         $("#privacy-pop-up").css({
             "display": "flex"
