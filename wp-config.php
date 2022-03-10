@@ -26,7 +26,7 @@ define( 'DB_NAME', 'meediaonne_wp' );
 define( 'DB_USER', 'root' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', '123' );
+define( 'DB_PASSWORD', '1234' );
 
 /** Nome do host do MySQL */
 define( 'DB_HOST', 'localhost' );
