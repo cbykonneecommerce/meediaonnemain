@@ -33,7 +33,6 @@
           </div>
         </div>
       </nav>
-
       <div class = "hero-div center container">
         <h1 class = "animate__animated animate__fadeInUp animate__slow">Plataforma que facilita e democratiza a criação e gestão das campanhas de mídia digital.</h1>
 
@@ -46,6 +45,7 @@
           </a> -->
         </div>
       </div>
+      
       <!-- WhatsApp Fixed Icon -->
       <!-- <a href="https://api.whatsapp.com/send?phone=5511999855880&         text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank"> -->
       <a href="https://api.whatsapp.com/send?phone=5511977140060&amp;text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20MeediaOnne%21" class="float" target="_blank">
