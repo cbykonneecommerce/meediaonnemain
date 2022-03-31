@@ -46,7 +46,7 @@
             </div>
             <div>
               <h2>Algum texto</h2>
-              <p class = "text">MeediaOnne></i></p>
+              <p class = "text">MeediaOnneMeediaOnneMeediaOnneMeediaOnne</i></p>
             </div>
             <!-- <div>
               <h2>Email</h2>
