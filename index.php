@@ -35,7 +35,7 @@
                 <option>acima de R$10.000,00</option>
               </select>
               <textarea name="message" required="required" placeholder="Mensagem" rows = "6"></textarea>
-              <button type = "submit" onclick="sendMail()" class = "submit-btn">Enviar</button>
+              <button type = "submit" onclick="sendMail()" class = "submit-btn">Experimente Grátis</button>
             </form>
           </div>
 
