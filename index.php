@@ -14,8 +14,8 @@
     <section class = "contact" id = "contact">
       <div class = "container">
         <div class = "title">
-          <h2 class = "white-text wow animate__animated animate__bounceIn animate__slow">Contato</h2>
-          <p class = "text">Fale conosco através dos nossos canais</p>
+          <h2 class = "white-text wow animate__animated animate__bounceIn animate__slow">Comece a obter resultados reais agora mesmo</h2>
+          <!-- <p class = "text">Fale conosco através dos nossos canais</p> -->
         </div>
 
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
@@ -27,7 +27,7 @@
               <input type = "phone" class = "form-control" name="telefone" required="required" placeholder="Telefone">
               <input type = "text" class = "form-control" name="empresa" required="required" placeholder="Empresa">
               <!-- <input type = "email" class = "form-control" name="email" required="required" placeholder="Email"> -->
-              <select class="form-control" name="investment" required="required" placeholder="Media de investimento?">
+              <select class="form-control" name="select" required="required" placeholder="Media de investimento?">
                 <option value="valor2" selected>Média mensal de investimento?</option>
                 <option>Até R$1.000,00</option>
                 <option>R$1.001,00 - R$5.000,00</option>
@@ -131,7 +131,7 @@
       <div class = "container">
         <div class = "row">
           <div class = "feature-left wow animate__animated animate__fadeInUp animate__slow">
-            <img src = "assets/aumentar-produtividade-1.jpg" alt = "">
+            <img src = "assets/pc-mockup.png" alt = "">
           </div>
           <div class = "feature-right wow animate__animated animate__fadeInUp animate__slow">
             <div class = "title-dores">
@@ -291,7 +291,7 @@
           </div>
           <div class = "proposal-item">
             <div class = "proposal-head">
-              <h3>Existe algum contrato ou período de fidelização? Existe multa para o cancelamento?</h3>
+              <h3>Existe algum contrato ou período de fidelização?</h3>
               <span><i class = "fas fa-plus"></i></span>
             </div>
             <div class = "proposal-content">
