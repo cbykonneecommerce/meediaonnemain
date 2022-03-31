@@ -45,7 +45,7 @@
               <p class = "text">MeediaOnne</p>
             </div>
             <div>
-              <h2>Telefone</h2>
+              <h2>Algum texto</h2>
               <p class = "text">MeediaOnne></i></p>
             </div>
             <!-- <div>

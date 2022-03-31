@@ -398,6 +398,7 @@ section{
     font-size: 1.4rem;
     font-weight: 300;
     opacity: 0.9;
+    color: var(--white-smoke);
 }
 .contact-left form select,
 .contact-left form input,
@@ -410,7 +411,7 @@ section{
     border: 1.5px solid var(--mount-meadow);
     outline: 0;
     color: #ffffff;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     background: #131212;
 }
 .contact-left form select::placeholder,
@@ -418,7 +419,7 @@ section{
 .contact-left form textarea::placeholder{
     font-size: 1.1rem;
     /* font-weight: 300; */
-    opacity: 0.8;
+    /* opacity: 0.8; */
     color: #ffffff;
 }
 .contact-left form select:focus,
@@ -738,6 +739,13 @@ h1+p {
       .expertise-head {
           width: 358px;
       }
+
+      .expertise-head h3 {
+        font-weight: 400;
+        font-size: 1rem;
+        opacity: 0.8;
+        color: #FFF;
+    }
   
       .detail p{
           font-size: 1rem;
